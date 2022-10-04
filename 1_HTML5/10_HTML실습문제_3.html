@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>10_HTML실습문제_3</title>
 </head>
+
 <body>
     <h1>회원 가입</h1>
     <form action="">
@@ -14,23 +16,36 @@
             <table>
                 <tr>
                     <th>ID</th>
-                    <td><input type="text" placeholder="아이디 10글자 이내"> <button>중복확인</button></td>
+                    <td><input type="text" placeholder="아이디 10글자 이내" name="inputId"></td>
+                    <td><button type="button">중복 확인</button></td>
                 </tr>
                 <tr>
                     <th>비밀번호</th>
-                    <td><input type="password" placeholder="영문,숫자,특수문자 포함 8자 이상"></td>
+                    <td colspan="2">
+                        <input type="password" name="inputPw1" size="30" maxlength="30"
+                            placeholder="영문,숫자,특수문자 포함 8자 이상">
+                    </td>
                 </tr>
                 <tr>
                     <th>비밀번호 확인</th>
-                    <td><input type="password"></td>
+                    <td colspan="2">
+                        <input type="password" name="inputPw2" size="30" maxlength="30">
+                    </td>
                 </tr>
                 <tr>
                     <th>Email</th>
-                    <td><input type="email"> <select name="email"><option value="">직접 입력</option>
-                        <option value="">gmail.com</option>
-                        <option value="">naver.com</option>
-                        <option value="">hanmail.com</option>
-                        <option value="">duckduckgo.com</option></select></td>
+                    <td>
+                        <input type="email" name="inputEmail1">
+                    </td>
+                    <td>
+                        <select name="inputEmail2">
+                            <option value="naver">naver.com</option>
+                            <option value="daum">hanmail.net</option>
+                            <option value="nate">nate.com</option>
+                            <option value="kh">kh.or.kr</option>
+                            <option selected>직접입력</option>
+                        </select>
+                    </td>
                 </tr>
             </table>
         </fieldset>
@@ -54,4 +69,5 @@
         <button>회원가입</button> <button type="reset">다시 입력</button> <button>이전으로</button>
     </form>
 </body>
+
 </html>

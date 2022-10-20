@@ -3,7 +3,7 @@ div[name~='aaa']{
     background-color: lightgreen;
 }
 
-/* |= : "-" 기호 앞쪽 단어가 일치하는 요소 선택 */
+/* |= : "=" 기호 앞쪽 단어가 일치하는 요소 선택 */
 div[class|="str"]{
     color: red;
     font-family: '궁서';
